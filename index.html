@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+	<title>Animated Slope Graph</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Font-Awesome/css/all.min.css">
+
+	<script src="vendor/jquery-3.3.1.min.js"></script>
+	<script src="vendor/d3.v5.min.js"></script>
+</head>
+
+<body>
+
+	<div id="outer-container">
+
+		<div id="title">
+			Website Popularity in 
+			<span class="region" region="China">China</span>
+			<span class="slash">/</span>
+			<span class="region" region="India">India</span>
+			<span class="slash">/</span>
+			<span class="region selected" region="United States">United States</span>
+			between <span class="left-year">2008</span> and <span class="right-year">2019</span>
+		</div>
+
+		<div id="vis-container">
+
+			<div class="left">
+				<div class="capsule" year="2019"><span>2019</span></div>
+				<div class="capsule" year="2018"><span>2018</span></div>
+				<div class="capsule" year="2017"><span>2017</span></div>
+				<div class="capsule" year="2016"><span>2016</span></div>
+				<div class="capsule" year="2015"><span>2015</span></div>
+				<div class="capsule" year="2014"><span>2014</span></div>
+				<div class="capsule" year="2013"><span>2013</span></div>
+				<div class="capsule" year="2012"><span>2012</span></div>
+				<div class="capsule" year="2011"><span>2011</span></div>
+				<div class="capsule" year="2010"><span>2010</span></div>
+				<div class="capsule" year="2009"><span>2009</span></div>
+				<div class="capsule selected" year="2008"><span>2008</span></div>
+			</div>
+
+			<div class="vis"><svg></svg></div>
+
+			<div class="right">
+				<div class="capsule selected" year="2019"><span>2019</span></div>
+				<div class="capsule" year="2018"><span>2018</span></div>
+				<div class="capsule" year="2017"><span>2017</span></div>
+				<div class="capsule" year="2016"><span>2016</span></div>
+				<div class="capsule" year="2015"><span>2015</span></div>
+				<div class="capsule" year="2014"><span>2014</span></div>
+				<div class="capsule" year="2013"><span>2013</span></div>
+				<div class="capsule" year="2012"><span>2012</span></div>
+				<div class="capsule" year="2011"><span>2011</span></div>
+				<div class="capsule" year="2010"><span>2010</span></div>
+				<div class="capsule" year="2009"><span>2009</span></div>
+				<div class="capsule" year="2008"><span>2008</span></div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/control.js"></script>
+	<script src="js/main.js"></script>
+</body>

@@ -1,0 +1,541 @@
+region,website,year,popularity
+United States,Google,2008,29
+United States,Google,2009,36
+United States,Google,2010,44
+United States,Google,2011,45
+United States,Google,2012,59
+United States,Google,2013,82
+United States,Google,2014,91
+United States,Google,2015,92
+United States,Google,2016,74
+United States,Google,2017,72
+United States,Google,2018,72
+United States,Google,2019,67
+United States,Youtube,2008,41
+United States,Youtube,2009,65
+United States,Youtube,2010,83
+United States,Youtube,2011,76
+United States,Youtube,2012,85
+United States,Youtube,2013,89
+United States,Youtube,2014,93
+United States,Youtube,2015,91
+United States,Youtube,2016,69
+United States,Youtube,2017,69
+United States,Youtube,2018,64
+United States,Youtube,2019,56
+United States,Facebook,2008,8
+United States,Facebook,2009,29
+United States,Facebook,2010,64
+United States,Facebook,2011,84
+United States,Facebook,2012,88
+United States,Facebook,2013,96
+United States,Facebook,2014,73
+United States,Facebook,2015,64
+United States,Facebook,2016,71
+United States,Facebook,2017,59
+United States,Facebook,2018,46
+United States,Facebook,2019,36
+United States,Wikipedia,2008,90
+United States,Wikipedia,2009,86
+United States,Wikipedia,2010,84
+United States,Wikipedia,2011,59
+United States,Wikipedia,2012,65
+United States,Wikipedia,2013,37
+United States,Wikipedia,2014,30
+United States,Wikipedia,2015,25
+United States,Wikipedia,2016,20
+United States,Wikipedia,2017,19
+United States,Wikipedia,2018,18
+United States,Wikipedia,2019,17
+United States,Yahoo,2008,73
+United States,Yahoo,2009,92
+United States,Yahoo,2010,91
+United States,Yahoo,2011,96
+United States,Yahoo,2012,90
+United States,Yahoo,2013,94
+United States,Yahoo,2014,71
+United States,Yahoo,2015,58
+United States,Yahoo,2016,45
+United States,Yahoo,2017,38
+United States,Yahoo,2018,36
+United States,Yahoo,2019,30
+United States,Amazon,2008,17
+United States,Amazon,2009,22
+United States,Amazon,2010,24
+United States,Amazon,2011,37
+United States,Amazon,2012,49
+United States,Amazon,2013,60
+United States,Amazon,2014,59
+United States,Amazon,2015,64
+United States,Amazon,2016,61
+United States,Amazon,2017,66
+United States,Amazon,2018,76
+United States,Amazon,2019,74
+United States,Reddit,2008,1
+United States,Reddit,2009,1
+United States,Reddit,2010,2
+United States,Reddit,2011,5
+United States,Reddit,2012,16
+United States,Reddit,2013,24
+United States,Reddit,2014,34
+United States,Reddit,2015,44
+United States,Reddit,2016,49
+United States,Reddit,2017,61
+United States,Reddit,2018,81
+United States,Reddit,2019,92
+United States,Netflix,2008,19
+United States,Netflix,2009,29
+United States,Netflix,2010,42
+United States,Netflix,2011,83
+United States,Netflix,2012,83
+United States,Netflix,2013,89
+United States,Netflix,2014,100
+United States,Netflix,2015,87
+United States,Netflix,2016,82
+United States,Netflix,2017,75
+United States,Netflix,2018,80
+United States,Netflix,2019,98
+United States,Instagram,2008,0
+United States,Instagram,2009,0
+United States,Instagram,2010,0
+United States,Instagram,2011,1
+United States,Instagram,2012,5
+United States,Instagram,2013,32
+United States,Instagram,2014,55
+United States,Instagram,2015,62
+United States,Instagram,2016,61
+United States,Instagram,2017,66
+United States,Instagram,2018,73
+United States,Instagram,2019,87
+United States,Bing,2008,5
+United States,Bing,2009,5
+United States,Bing,2010,62
+United States,Bing,2011,76
+United States,Bing,2012,69
+United States,Bing,2013,69
+United States,Bing,2014,77
+United States,Bing,2015,69
+United States,Bing,2016,51
+United States,Bing,2017,41
+United States,Bing,2018,38
+United States,Bing,2019,36
+United States,Microsoft,2008,75
+United States,Microsoft,2009,71
+United States,Microsoft,2010,68
+United States,Microsoft,2011,58
+United States,Microsoft,2012,45
+United States,Microsoft,2013,45
+United States,Microsoft,2014,41
+United States,Microsoft,2015,40
+United States,Microsoft,2016,32
+United States,Microsoft,2017,31
+United States,Microsoft,2018,30
+United States,Microsoft,2019,29
+United States,Stack Overflow,2008,2
+United States,Stack Overflow,2009,8
+United States,Stack Overflow,2010,24
+United States,Stack Overflow,2011,45
+United States,Stack Overflow,2012,69
+United States,Stack Overflow,2013,74
+United States,Stack Overflow,2014,91
+United States,Stack Overflow,2015,72
+United States,Stack Overflow,2016,77
+United States,Stack Overflow,2017,65
+United States,Stack Overflow,2018,64
+United States,Stack Overflow,2019,57
+United States,Ebay,2008,84
+United States,Ebay,2009,87
+United States,Ebay,2010,70
+United States,Ebay,2011,81
+United States,Ebay,2012,82
+United States,Ebay,2013,92
+United States,Ebay,2014,81
+United States,Ebay,2015,71
+United States,Ebay,2016,59
+United States,Ebay,2017,52
+United States,Ebay,2018,47
+United States,Ebay,2019,41
+United States,Apple,2008,30
+United States,Apple,2009,26
+United States,Apple,2010,35
+United States,Apple,2011,32
+United States,Apple,2012,36
+United States,Apple,2013,35
+United States,Apple,2014,32
+United States,Apple,2015,33
+United States,Apple,2016,36
+United States,Apple,2017,40
+United States,Apple,2018,44
+United States,Apple,2019,44
+United States,Twitter,2008,1
+United States,Twitter,2009,9
+United States,Twitter,2010,41
+United States,Twitter,2011,55
+United States,Twitter,2012,85
+United States,Twitter,2013,96
+United States,Twitter,2014,77
+United States,Twitter,2015,68
+United States,Twitter,2016,61
+United States,Twitter,2017,66
+United States,Twitter,2018,60
+United States,Twitter,2019,55
+India,Google,2008,51
+India,Google,2009,56
+India,Google,2010,59
+India,Google,2011,57
+India,Google,2012,62
+India,Google,2013,81
+India,Google,2014,89
+India,Google,2015,92
+India,Google,2016,75
+India,Google,2017,59
+India,Google,2018,51
+India,Google,2019,34
+India,Youtube,2008,22
+India,Youtube,2009,33
+India,Youtube,2010,62
+India,Youtube,2011,72
+India,Youtube,2012,80
+India,Youtube,2013,64
+India,Youtube,2014,74
+India,Youtube,2015,81
+India,Youtube,2016,61
+India,Youtube,2017,57
+India,Youtube,2018,77
+India,Youtube,2019,61
+India,Facebook,2008,1
+India,Facebook,2009,3
+India,Facebook,2010,16
+India,Facebook,2011,55
+India,Facebook,2012,80
+India,Facebook,2013,96
+India,Facebook,2014,74
+India,Facebook,2015,49
+India,Facebook,2016,41
+India,Facebook,2017,27
+India,Facebook,2018,23
+India,Facebook,2019,10
+India,Wikipedia,2008,87
+India,Wikipedia,2009,84
+India,Wikipedia,2010,95
+India,Wikipedia,2011,71
+India,Wikipedia,2012,54
+India,Wikipedia,2013,46
+India,Wikipedia,2014,35
+India,Wikipedia,2015,35
+India,Wikipedia,2016,31
+India,Wikipedia,2017,27
+India,Wikipedia,2018,26
+India,Wikipedia,2019,22
+India,Yahoo,2008,62
+India,Yahoo,2009,73
+India,Yahoo,2010,73
+India,Yahoo,2011,70
+India,Yahoo,2012,59
+India,Yahoo,2013,100
+India,Yahoo,2014,54
+India,Yahoo,2015,48
+India,Yahoo,2016,29
+India,Yahoo,2017,18
+India,Yahoo,2018,12
+India,Yahoo,2019,6
+India,Amazon,2008,3
+India,Amazon,2009,3
+India,Amazon,2010,4
+India,Amazon,2011,5
+India,Amazon,2012,5
+India,Amazon,2013,5
+India,Amazon,2014,7
+India,Amazon,2015,45
+India,Amazon,2016,41
+India,Amazon,2017,46
+India,Amazon,2018,54
+India,Amazon,2019,45
+India,Reddit,2008,4
+India,Reddit,2009,6
+India,Reddit,2010,6
+India,Reddit,2011,10
+India,Reddit,2012,19
+India,Reddit,2013,36
+India,Reddit,2014,27
+India,Reddit,2015,51
+India,Reddit,2016,50
+India,Reddit,2017,60
+India,Reddit,2018,85
+India,Reddit,2019,79
+India,Netflix,2008,1
+India,Netflix,2009,2
+India,Netflix,2010,2
+India,Netflix,2011,5
+India,Netflix,2012,6
+India,Netflix,2013,3
+India,Netflix,2014,5
+India,Netflix,2015,6
+India,Netflix,2016,43
+India,Netflix,2017,15
+India,Netflix,2018,29
+India,Netflix,2019,87
+India,Instagram,2008,0
+India,Instagram,2009,0
+India,Instagram,2010,0
+India,Instagram,2011,0
+India,Instagram,2012,0
+India,Instagram,2013,2
+India,Instagram,2014,6
+India,Instagram,2015,11
+India,Instagram,2016,15
+India,Instagram,2017,28
+India,Instagram,2018,46
+India,Instagram,2019,56
+India,Bing,2008,2
+India,Bing,2009,3
+India,Bing,2010,23
+India,Bing,2011,20
+India,Bing,2012,15
+India,Bing,2013,15
+India,Bing,2014,14
+India,Bing,2015,15
+India,Bing,2016,10
+India,Bing,2017,8
+India,Bing,2018,7
+India,Bing,2019,5
+India,Microsoft,2008,70
+India,Microsoft,2009,69
+India,Microsoft,2010,63
+India,Microsoft,2011,47
+India,Microsoft,2012,32
+India,Microsoft,2013,33
+India,Microsoft,2014,22
+India,Microsoft,2015,30
+India,Microsoft,2016,23
+India,Microsoft,2017,14
+India,Microsoft,2018,11
+India,Microsoft,2019,8
+India,Stack Overflow,2008,6
+India,Stack Overflow,2009,7
+India,Stack Overflow,2010,24
+India,Stack Overflow,2011,36
+India,Stack Overflow,2012,64
+India,Stack Overflow,2013,84
+India,Stack Overflow,2014,72
+India,Stack Overflow,2015,67
+India,Stack Overflow,2016,72
+India,Stack Overflow,2017,56
+India,Stack Overflow,2018,50
+India,Stack Overflow,2019,31
+India,Ebay,2008,32
+India,Ebay,2009,34
+India,Ebay,2010,45
+India,Ebay,2011,43
+India,Ebay,2012,54
+India,Ebay,2013,60
+India,Ebay,2014,53
+India,Ebay,2015,68
+India,Ebay,2016,50
+India,Ebay,2017,32
+India,Ebay,2018,19
+India,Ebay,2019,5
+India,Apple,2008,49
+India,Apple,2009,48
+India,Apple,2010,66
+India,Apple,2011,56
+India,Apple,2012,56
+India,Apple,2013,58
+India,Apple,2014,49
+India,Apple,2015,55
+India,Apple,2016,54
+India,Apple,2017,47
+India,Apple,2018,46
+India,Apple,2019,37
+India,Twitter,2008,1
+India,Twitter,2009,4
+India,Twitter,2010,43
+India,Twitter,2011,52
+India,Twitter,2012,53
+India,Twitter,2013,47
+India,Twitter,2014,55
+India,Twitter,2015,46
+India,Twitter,2016,38
+India,Twitter,2017,36
+India,Twitter,2018,35
+India,Twitter,2019,25
+China,Google,2008,15
+China,Google,2009,15
+China,Google,2010,21
+China,Google,2011,17
+China,Google,2012,11
+China,Google,2013,26
+China,Google,2014,30
+China,Google,2015,87
+China,Google,2016,60
+China,Google,2017,79
+China,Google,2018,80
+China,Google,2019,71
+China,Youtube,2008,4
+China,Youtube,2009,5
+China,Youtube,2010,3
+China,Youtube,2011,3
+China,Youtube,2012,2
+China,Youtube,2013,6
+China,Youtube,2014,8
+China,Youtube,2015,68
+China,Youtube,2016,45
+China,Youtube,2017,77
+China,Youtube,2018,75
+China,Youtube,2019,67
+China,Facebook,2008,2
+China,Facebook,2009,4
+China,Facebook,2010,4
+China,Facebook,2011,9
+China,Facebook,2012,5
+China,Facebook,2013,12
+China,Facebook,2014,14
+China,Facebook,2015,99
+China,Facebook,2016,86
+China,Facebook,2017,80
+China,Facebook,2018,75
+China,Facebook,2019,46
+China,Wikipedia,2008,9
+China,Wikipedia,2009,14
+China,Wikipedia,2010,16
+China,Wikipedia,2011,16
+China,Wikipedia,2012,13
+China,Wikipedia,2013,30
+China,Wikipedia,2014,34
+China,Wikipedia,2015,80
+China,Wikipedia,2016,67
+China,Wikipedia,2017,78
+China,Wikipedia,2018,73
+China,Wikipedia,2019,56
+China,Yahoo,2008,77
+China,Yahoo,2009,57
+China,Yahoo,2010,58
+China,Yahoo,2011,52
+China,Yahoo,2012,30
+China,Yahoo,2013,60
+China,Yahoo,2014,42
+China,Yahoo,2015,65
+China,Yahoo,2016,51
+China,Yahoo,2017,52
+China,Yahoo,2018,49
+China,Yahoo,2019,47
+China,Amazon,2008,4
+China,Amazon,2009,4
+China,Amazon,2010,6
+China,Amazon,2011,8
+China,Amazon,2012,9
+China,Amazon,2013,21
+China,Amazon,2014,29
+China,Amazon,2015,62
+China,Amazon,2016,51
+China,Amazon,2017,86
+China,Amazon,2018,92
+China,Amazon,2019,69
+China,Reddit,2008,0
+China,Reddit,2009,0
+China,Reddit,2010,0
+China,Reddit,2011,1
+China,Reddit,2012,1
+China,Reddit,2013,4
+China,Reddit,2014,5
+China,Reddit,2015,23
+China,Reddit,2016,25
+China,Reddit,2017,50
+China,Reddit,2018,67
+China,Reddit,2019,83
+China,Netflix,2008,0
+China,Netflix,2009,0
+China,Netflix,2010,0
+China,Netflix,2011,0
+China,Netflix,2012,0
+China,Netflix,2013,1
+China,Netflix,2014,2
+China,Netflix,2015,3
+China,Netflix,2016,21
+China,Netflix,2017,15
+China,Netflix,2018,28
+China,Netflix,2019,58
+China,Instagram,2008,0
+China,Instagram,2009,0
+China,Instagram,2010,0
+China,Instagram,2011,0
+China,Instagram,2012,0
+China,Instagram,2013,4
+China,Instagram,2014,13
+China,Instagram,2015,53
+China,Instagram,2016,54
+China,Instagram,2017,69
+China,Instagram,2018,82
+China,Instagram,2019,79
+China,Bing,2008,3
+China,Bing,2009,2
+China,Bing,2010,12
+China,Bing,2011,11
+China,Bing,2012,9
+China,Bing,2013,22
+China,Bing,2014,22
+China,Bing,2015,81
+China,Bing,2016,65
+China,Bing,2017,48
+China,Bing,2018,50
+China,Bing,2019,100
+China,Microsoft,2008,40
+China,Microsoft,2009,33
+China,Microsoft,2010,33
+China,Microsoft,2011,30
+China,Microsoft,2012,18
+China,Microsoft,2013,26
+China,Microsoft,2014,26
+China,Microsoft,2015,65
+China,Microsoft,2016,52
+China,Microsoft,2017,40
+China,Microsoft,2018,41
+China,Microsoft,2019,40
+China,Stack Overflow,2008,0
+China,Stack Overflow,2009,0
+China,Stack Overflow,2010,0
+China,Stack Overflow,2011,0
+China,Stack Overflow,2012,1
+China,Stack Overflow,2013,6
+China,Stack Overflow,2014,11
+China,Stack Overflow,2015,47
+China,Stack Overflow,2016,59
+China,Stack Overflow,2017,70
+China,Stack Overflow,2018,55
+China,Stack Overflow,2019,30
+China,Ebay,2008,17
+China,Ebay,2009,13
+China,Ebay,2010,13
+China,Ebay,2011,17
+China,Ebay,2012,13
+China,Ebay,2013,29
+China,Ebay,2014,36
+China,Ebay,2015,49
+China,Ebay,2016,53
+China,Ebay,2017,52
+China,Ebay,2018,47
+China,Ebay,2019,36
+China,Apple,2008,7
+China,Apple,2009,7
+China,Apple,2010,9
+China,Apple,2011,17
+China,Apple,2012,18
+China,Apple,2013,28
+China,Apple,2014,33
+China,Apple,2015,50
+China,Apple,2016,56
+China,Apple,2017,63
+China,Apple,2018,75
+China,Apple,2019,68
+China,Twitter,2008,0
+China,Twitter,2009,1
+China,Twitter,2010,7
+China,Twitter,2011,6
+China,Twitter,2012,3
+China,Twitter,2013,7
+China,Twitter,2014,8
+China,Twitter,2015,66
+China,Twitter,2016,37
+China,Twitter,2017,51
+China,Twitter,2018,39
+China,Twitter,2019,44
