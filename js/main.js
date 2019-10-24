@@ -13,7 +13,9 @@ var rightCircleAndLabelGroup = null;
 var lineGroup = null;
 
 d3.csv('data/data.csv', dataProcessor).then(function(data) {
+	// returns a function so must call yScale(x)
 	yScale = getYScale(data);
+	
 	yearToRegionToData = nestData(data);
 
 	initLeftCircleAndLabelGroup();
@@ -30,39 +32,68 @@ d3.csv('data/data.csv', dataProcessor).then(function(data) {
 // 
 
 function getYScale(data) {
-    /////////////////////////////////////////////////////////////////////
-    //                        YOUR CODE HERE                           //
-    /////////////////////////////////////////////////////////////////////
-
-    
-
-    /////////////////////////////////////////////////////////////////////
-    //                        END OF YOUR CODE                         //
-    /////////////////////////////////////////////////////////////////////
+	
+	let min = 0, max = 0;
+	data.forEach(function(d) {
+		
+		if (min > d.popularity) min = d.popularity;
+		if (max < d.popularity) max = d.popularity;
+	});
+	
+	return d3.scaleLinear().domain([min, max]).range([svgHeight - margin.top - margin.bottom, 0]);
 }
 
 function nestData(data) {
-    /////////////////////////////////////////////////////////////////////
-    //                        YOUR CODE HERE                           //
-    /////////////////////////////////////////////////////////////////////
-
-    
-
-    /////////////////////////////////////////////////////////////////////
-    //                        END OF YOUR CODE                         //
-    /////////////////////////////////////////////////////////////////////
+	return d3.nest()
+	.key(function(d) {
+		return d.year;
+    })
+	.key(function(d) {
+		return d.region;
+    })
+	.object(data);
 }
 
 function drawLeftCirclesAndLabels() {
-    /////////////////////////////////////////////////////////////////////
-    //                        YOUR CODE HERE                           //
-    /////////////////////////////////////////////////////////////////////
+	var selectedYear = getSelectedLeftYear();
+	var selectedRegion = getSelectedRegion();
+	
+	var selectedData = yearToRegionToData[selectedYear][selectedRegion];
+	
+	console.log(selectedYear);
+	
+	let circle = d3.select('body svg').selectAll('circle').data(selectedData, function(d) {
+		console.log(d.website);
+		return d.website;
+	});
+	
+	
+	
+	circle.enter()
+	.append('circle')
+	.attr('cy', function(d) {
+		//console.log(yScale(d.popularity));
+		return yScale(d.popularity);
+	})
+	.attr('cx', function(d) {
+		return 100;
+	})
+	.attr('r', function(d) {
+		return 10;
+	})
+	.attr('fill', function(d) {
+		return 'red';
+	});
+	
+	circle.transition().duration(500).attr('cy', function(d) {
+		return yScale(d.popularity);
+	});
 
-    
-
-    /////////////////////////////////////////////////////////////////////
-    //                        END OF YOUR CODE                         //
-    /////////////////////////////////////////////////////////////////////
+	circle.exit();
+	//circle.attr('class', 'planet');
+	
+	// Required object constancy
+	//.data(selectedData, function(d) { return d.website; });
 }
 
 function drawRightCirclesAndLabels() {
