@@ -12,6 +12,8 @@ var leftCircleAndLabelGroup = null;
 var rightCircleAndLabelGroup = null;
 var lineGroup = null;
 
+var leftOffset = 10;
+
 d3.csv('data/data.csv', dataProcessor).then(function(data) {
 	// returns a function so must call yScale(x)
 	yScale = getYScale(data);
@@ -33,7 +35,7 @@ d3.csv('data/data.csv', dataProcessor).then(function(data) {
 
 function getYScale(data) {
 	
-	let min = 0, max = 0;
+	var min = 0, max = 0;
 	data.forEach(function(d) {
 		
 		if (min > d.popularity) min = d.popularity;
@@ -55,72 +57,180 @@ function nestData(data) {
 }
 
 function drawLeftCirclesAndLabels() {
+	
 	var selectedYear = getSelectedLeftYear();
 	var selectedRegion = getSelectedRegion();
-	
 	var selectedData = yearToRegionToData[selectedYear][selectedRegion];
 	
-	console.log(selectedYear);
+	var circleRadius = 10;
 	
-	let circle = d3.select('body svg').selectAll('circle').data(selectedData, function(d) {
-		console.log(d.website);
-		return d.website;
-	});
-	
-	
+	var circle = d3.select('body svg .left-group').selectAll('circle').data(selectedData);
+	var label = d3.select('body svg .left-group').selectAll('text').data(selectedData);
 	
 	circle.enter()
 	.append('circle')
 	.attr('cy', function(d) {
-		//console.log(yScale(d.popularity));
 		return yScale(d.popularity);
 	})
 	.attr('cx', function(d) {
-		return 100;
+		return leftOffset;
 	})
 	.attr('r', function(d) {
-		return 10;
+		return circleRadius;
 	})
 	.attr('fill', function(d) {
-		return 'red';
+		return getColor(d.website);
 	});
 	
-	circle.transition().duration(500).attr('cy', function(d) {
-		return yScale(d.popularity);
+	label.enter()
+	.append('text')
+	.text(function(d) {
+		return d.website;
+	})
+	.attr('y', function(d) {
+		return yScale(d.popularity) + this.getBBox().height - circleRadius;
+	})
+	.attr('x', function(d) {
+		return leftOffset - (this.getBBox().width + 20);
+	})
+	.attr('fill', function(d) {
+		return getColor(d.website);
 	});
 
-	circle.exit();
-	//circle.attr('class', 'planet');
+	label.transition().duration(800).ease(d3.easeCubicInOut)
+	.attr('y', function(d) {
+		return yScale(d.popularity) + this.getBBox().height - circleRadius;
+	})
+	.attr('fill', function(d) {
+		return getColor(d.website);
+	});
 	
-	// Required object constancy
-	//.data(selectedData, function(d) { return d.website; });
+	circle.transition().duration(800).ease(d3.easeCubicInOut)
+	.attr('cy', function(d) {
+		return yScale(d.popularity);
+	})
+	.attr('fill', function(d) {
+		return getColor(d.website);
+	});
+	
+	circle.exit();
+	label.exit();
 }
 
 function drawRightCirclesAndLabels() {
-    /////////////////////////////////////////////////////////////////////
-    //                        YOUR CODE HERE                           //
-    /////////////////////////////////////////////////////////////////////
+	
+	var selectedYear = getSelectedRightYear();
+	var selectedRegion = getSelectedRegion();
+	var selectedData = yearToRegionToData[selectedYear][selectedRegion];
+	
+	var x = 0;
+	var circleRadius = 10;
+	
+	var circle = d3.select('body svg .right-group').selectAll('circle').data(selectedData);
+	var label = d3.select('body svg .right-group').selectAll('text').data(selectedData);
 
-    
+	var circleEnter = circle.enter()
+	.append('circle')
+	.attr('cy', function(d) {
+		return yScale(d.popularity);
+	})
+	.attr('cx', function(d) {
+		return x;
+	})
+	.attr('r', function(d) {
+		return circleRadius;
+	})
+	.attr('fill', function(d) {
+		return getColor(d.website);
+	});
+	
+	label.enter()
+	.append('text')
+	.text(function(d) {
+		return d.website;
+	})
+	.attr('y', function(d) {
+		return yScale(d.popularity) + this.getBBox().height - circleRadius;
+	})
+	.attr('x', function(d) {
+		return circleRadius + 5;
+	})
+	.attr('fill', function(d) {
+		return getColor(d.website);
+	});
 
-    /////////////////////////////////////////////////////////////////////
-    //                        END OF YOUR CODE                         //
-    /////////////////////////////////////////////////////////////////////
+	label.transition().duration(800).ease(d3.easeCubicInOut)
+	.attr('y', function(d) {
+		return yScale(d.popularity) + this.getBBox().height - circleRadius;
+	})
+	.attr('fill', function(d) {
+		return getColor(d.website);
+	});
+	
+	circle.transition().duration(800).ease(d3.easeCubicInOut)
+	.attr('cy', function(d) {
+		return yScale(d.popularity);
+	})
+	.attr('fill', function(d) {
+		return getColor(d.website);
+	});
+	
+	circle.exit();
+	label.exit();
 }
 
 function drawLines() {
+	
 	var lineData = getLineData();
-
-    /////////////////////////////////////////////////////////////////////
-    //                        YOUR CODE HERE                           //
-    /////////////////////////////////////////////////////////////////////
-
-    
-
-    /////////////////////////////////////////////////////////////////////
-    //                        END OF YOUR CODE                         //
-    /////////////////////////////////////////////////////////////////////
+	var line = d3.select('body svg .lines').selectAll('line').data(lineData);
+	
+	line.enter().append('line')
+	.attr('x1', function(d) {
+		return d.x1 + leftOffset;
+	})
+	.attr('x2', function(d) {
+		return d.x2;
+	})
+	.attr('y1', function(d) {
+		return d.y1;
+	})
+	.attr('y2', function(d) {
+		return d.y2;
+	})
+	.attr('stroke', function(d) {
+		return getColor(d.website);
+	});
+	
+	line.transition().duration(800).ease(d3.easeCubicInOut)
+	.attr('x1', function(d) {
+		return d.x1 + leftOffset;
+	})
+	.attr('x2', function(d) {
+		return d.x2;
+	})
+	.attr('y1', function(d) {
+		return d.y1;
+	})
+	.attr('y2', function(d) {
+		return d.y2;
+	})
+	.attr('stroke', function(d) {
+		return getColor(d.website);
+	});
+	
+	line.exit();
 }
+
+var toolTip = d3.tip()
+.attr("class", "d3-tip")
+.offset([-12, 0])
+.html(function(d) {
+	return "<h5>"+d['website']+"</h5><table><thead><tr><td>mph</td><td>power</td><td>Cylinders</td><td>Year</td></tr></thead>"
+			+ "<tbody><tr><td>"+d['website']+"</td><td>"+d['website']+"</td><td>"+d['website']+"</td><td>"+d['website']+"</td></tr></tbody>"
+			+ "<thead><tr><td>economy</td><td colspan='2'>displacement</td><td>weight</td></tr></thead>"
+			+ "<tbody><tr><td>"+d['website']+"</td><td colspan='2'>"+d['website']+"</td><td>"+d['website']+"</td></tr></tbody></table>"
+});
+svg.call(toolTip);
 
 // 
 // HELPER FUNCTIONS
@@ -157,20 +267,20 @@ function getLineData() {
 	var circleMargin = 8;
 	var lineData = [];
 
-	for (let i = 0; i < dataForSelectedLeftYear.length; i++) {
-		let currentWebsite = dataForSelectedLeftYear[i].website;
-		let leftPopularity = dataForSelectedLeftYear[i].popularity;
-		let rightPopularity = dataForSelectedRightYear.find(function(d) { return d.website == currentWebsite; }).popularity;
+	for (var i = 0; i < dataForSelectedLeftYear.length; i++) {
+		var currentWebsite = dataForSelectedLeftYear[i].website;
+		var leftPopularity = dataForSelectedLeftYear[i].popularity;
+		var rightPopularity = dataForSelectedRightYear.find(function(d) { return d.website == currentWebsite; }).popularity;
 
-		let oldX1 = 0;
-		let oldY1 = yScale(leftPopularity);
-		let oldX2 = svgWidth - margin.right - margin.left;
-		let oldY2 = yScale(rightPopularity);
+		var oldX1 = 0;
+		var oldY1 = yScale(leftPopularity);
+		var oldX2 = svgWidth - margin.right - margin.left;
+		var oldY2 = yScale(rightPopularity);
 
-		let newX1 = 0 + circleRadius + circleMargin;
-		let newY1 = (oldY2 - oldY1) / (oldX2 - oldX1) * (newX1 - oldX1) + oldY1;
-		let newX2 = svgWidth - margin.right - margin.left - circleRadius - circleMargin;
-		let newY2 = (oldY2 - oldY1) / (oldX2 - oldX1) * (newX2 - oldX1) + oldY1;
+		var newX1 = 0 + circleRadius + circleMargin;
+		var newY1 = (oldY2 - oldY1) / (oldX2 - oldX1) * (newX1 - oldX1) + oldY1;
+		var newX2 = svgWidth - margin.right - margin.left - circleRadius - circleMargin;
+		var newY2 = (oldY2 - oldY1) / (oldX2 - oldX1) * (newX2 - oldX1) + oldY1;
 
 		lineData.push({ 
 			website: currentWebsite,

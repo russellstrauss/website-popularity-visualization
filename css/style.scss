@@ -1,5 +1,72 @@
 @import 'imported.scss';
 
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
 circle {
 	opacity: .5;
+	z-index: 9000;
+	position: relative;
+}
+
+.left, .right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.capsule {
+	margin: 20px 0;
+	
+	&.selected {
+		
+		span {
+			opacity: 1;
+			background-color: #13ad4d;
+			border: 1px solid transparent;
+		}
+	}
+	
+	&.disabled {
+		opacity: .25;
+		pointer-events: none;
+		
+		&:hover {
+			
+			span {
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			}
+		}
+	}
+	
+	span {
+		padding: 10px 20px;
+		border-radius: 4px;
+		cursor: pointer;
+		border: 1px solid #ddd;
+		transition: all 200ms ease;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		opacity: .7;
+		font-size: 18px;
+		//background-color: rgba(255, 255, 255, .5);
+		color: white;
+		
+		&:hover {
+			opacity: 1;
+			box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15), 0 0px 6px rgba(0, 0, 0, 0.22);
+			//box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		}
+	}
+}
+
+#title {
+	
+	.capsule {
+		display: inline-block;
+		margin: 0 10px;
+	}
 }

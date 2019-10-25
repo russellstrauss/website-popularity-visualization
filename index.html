@@ -5,11 +5,11 @@
 	<title>Animated Slope Graph</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/font.css">
-	<link rel="stylesheet" type="text/css" href="fonts/Font-Awesome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 	<script src="vendor/jquery-3.3.1.min.js"></script>
 	<script src="vendor/d3.v5.min.js"></script>
+	<script src="vendor/d3-tip.js"></script>
 </head>
 
 <body>
@@ -18,11 +18,17 @@
 
 		<div id="title">
 			Website Popularity in 
-			<span class="region" region="China">China</span>
+			<div class="capsule">
+				<span class="region" region="China">China</span>
+			</div>
 			<span class="slash">/</span>
-			<span class="region" region="India">India</span>
+			<div class="capsule">
+				<span class="region" region="India">India</span>
+			</div>
 			<span class="slash">/</span>
-			<span class="region selected" region="United States">United States</span>
+			<div class="capsule selected">
+				<span class="region selected" region="United States">United States</span>
+			</div>
 			between <span class="left-year">2008</span> and <span class="right-year">2019</span>
 		</div>
 
@@ -40,7 +46,7 @@
 				<div class="capsule" year="2011"><span>2011</span></div>
 				<div class="capsule" year="2010"><span>2010</span></div>
 				<div class="capsule" year="2009"><span>2009</span></div>
-				<div class="capsule selected" year="2008"><span>2008</span></div>
+				<div class="capsule selected" year="2008"><span class="selected">2008</span></div>
 			</div>
 
 			<div class="vis"><svg></svg></div>
